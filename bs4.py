@@ -18,3 +18,13 @@ imgs=soup.find_all('img')
 for img in imgs:
     #属性にアクセスするにはgetメソッドを使う
     print(img.get('src'))
+
+#その他の要素の取得方法
+
+#idを指定
+div=soup.find(id='headerImageBox')
+
+#classで取得
+imgs=soup.select('.headerImage')
+for img in imgs:
+    print(img.get('src'))

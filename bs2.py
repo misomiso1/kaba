@@ -9,12 +9,6 @@ soup=BeautifulSoup(res.text,'html.parser')
 #print(soup)
 
 #タグで要素取得
-ele=soup.find('title')
+ele=soup.find('title') #<title>コビトカバ</title>
 #要素のtextコンテントを表示
-print(ele.text)
-
-#要素を結果セット(ResultSet)として取得
-imgs=soup.find_all('img')
-for img in imgs:
-    #属性にアクセスするにはgetメソッドを使う
-    print(img.get('src'))
+print(ele.text) #コビトカバ
