@@ -28,3 +28,7 @@ div=soup.find(id='headerImageBox')
 imgs=soup.select('.headerImage')
 for img in imgs:
     print(img.get('src'))
+
+tds = soup.select('tr td:first-child')
+for td in tds:
+    print(td.text)
